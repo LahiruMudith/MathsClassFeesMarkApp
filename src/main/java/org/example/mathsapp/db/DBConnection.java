@@ -21,12 +21,6 @@ public class DBConnection {
             throw new RuntimeException(e);
         }
 
-//        try {
-//            connection = DriverManager.getConnection("https://databases.000webhost.com/index.php?route=/database/structure&db=id21771665_maths_app", "id21771665_maths_app", "Ss2006#L");
-//        } catch (SQLException e) {
-//            throw new RuntimeException(e);
-//        }
-
     }
 
     public static DBConnection getDbConnection() {

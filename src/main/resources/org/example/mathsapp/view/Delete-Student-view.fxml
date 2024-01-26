@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="root" prefHeight="505.0" prefWidth="682.0" style="-fx-background-color: #34495e;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.mathsapp.Controllers.Student.DeleteStudentController">
+<AnchorPane fx:id="root" prefHeight="505.0" prefWidth="682.0" style="-fx-background-color: #34495e;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.mathsapp.Controllers.Student.DeleteStudentController">
     <children>
       <Button disable="true" layoutX="325.0" layoutY="445.0" mnemonicParsing="false" onMouseClicked="#studentAdd" prefHeight="42.0" prefWidth="104.0" style="-fx-background-radius: 10; -fx-background-color: #95a5a6;">
          <cursor>
@@ -62,7 +62,7 @@
       </Button>
       <ImageView fitHeight="32.0" fitWidth="39.0" layoutX="591.0" layoutY="450.0" onMouseClicked="#studentDelete" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../assets/AddStudentIcon.png" />
+            <Image url="@../assets/deleteStudentIcon.png" />
          </image>
          <cursor>
             <Cursor fx:constant="HAND" />
@@ -89,27 +89,27 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
-      <TextField fx:id="txtName" layoutX="171.0" layoutY="88.0" prefHeight="49.0" prefWidth="412.0" style="-fx-prompt-text-fill: FFFFFF; -fx-region-border: none; -fx-background-color: FFFnoneFFF;">
+      <TextField fx:id="txtName" layoutX="171.0" layoutY="88.0" prefHeight="49.0" prefWidth="412.0" style="-fx-text-fill: #FFFFFF; -fx-region-border: none; -fx-background-color: none;">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
       </TextField>
-      <TextField fx:id="txtStudentID" layoutX="210.0" layoutY="138.0" prefHeight="49.0" prefWidth="412.0" style="-fx-prompt-text-fill: #ecf0f1; -fx-region-border: none; -fx-background-color: FFFnoneFFF;">
+      <TextField fx:id="txtStudentID" layoutX="210.0" layoutY="138.0" prefHeight="49.0" prefWidth="412.0" style="-fx-text-fill: #FFFFFF; -fx-region-border: none; -fx-background-color: none;">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
       </TextField>
-      <TextField fx:id="txtphoneNumber" layoutX="223.0" layoutY="238.0" prefHeight="49.0" prefWidth="412.0" style="-fx-prompt-text-fill: #ecf0f1; -fx-region-border: none; -fx-background-color: FFFnoneFFF;">
+      <TextField fx:id="txtphoneNumber" layoutX="223.0" layoutY="238.0" prefHeight="49.0" prefWidth="412.0" style="-fx-text-fill: #FFFFFF; -fx-region-border: none; -fx-background-color: none;">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
       </TextField>
-      <TextField fx:id="txtGrade" layoutX="171.0" layoutY="338.0" prefHeight="49.0" prefWidth="412.0" style="-fx-prompt-text-fill: -fx-prompt-text-fill; -fx-region-border: none; -fx-background-color: FFFnoneFFF;">
+      <TextField fx:id="txtGrade" layoutX="171.0" layoutY="338.0" prefHeight="49.0" prefWidth="412.0" style="-fx-text-fill: #FFFFFF; -fx-region-border: none; -fx-background-color: none;">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
       </TextField>
-      <TextField fx:id="txtAddress" layoutX="181.0" layoutY="387.0" prefHeight="49.0" prefWidth="412.0" style="-fx-prompt-text-fill: #ecf0f1; -fx-region-border: none; -fx-background-color: FFFnoneFFF;">
+      <TextField fx:id="txtAddress" layoutX="181.0" layoutY="387.0" prefHeight="49.0" prefWidth="412.0" style="-fx-text-fill: #FFFFFF; -fx-region-border: none; -fx-background-color: none;">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -149,12 +149,12 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </Text>
-      <TextField fx:id="txtWhatsappNumber" layoutX="243.0" layoutY="188.0" prefHeight="49.0" prefWidth="412.0" style="-fx-prompt-text-fill: #ecf0f1; -fx-region-border: none; -fx-background-color: FFFnoneFFF;">
+      <TextField fx:id="txtWhatsappNumber" layoutX="243.0" layoutY="188.0" prefHeight="49.0" prefWidth="412.0" style="-fx-text-fill: #FFFFFF; -fx-region-border: none; -fx-background-color: none;">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
       </TextField>
-      <TextField fx:id="txtEmail" layoutX="171.0" layoutY="288.0" prefHeight="49.0" prefWidth="412.0" style="-fx-prompt-text-fill: #ecf0f1; -fx-region-border: none; -fx-background-color: FFFnoneFFF;">
+      <TextField fx:id="txtEmail" layoutX="171.0" layoutY="288.0" prefHeight="49.0" prefWidth="412.0" style="-fx-text-fill: #FFFFFF; -fx-region-border: none; -fx-background-color: none;">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>

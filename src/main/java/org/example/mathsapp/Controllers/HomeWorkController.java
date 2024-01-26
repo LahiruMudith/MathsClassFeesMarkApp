@@ -69,8 +69,7 @@ public class HomeWorkController implements Initializable {
         String BeforeDate = dateFormat.format(todate1);
 
 
-
-        String message = ( name + "( "+ studenID +" ) - Grade " +grade+ "\n" +
+        String message = (name + "( " + studenID + " ) - Grade " + grade + "\n" +
                 "\n" +
                 "ආදරනීය දෙමාපියනි,\n" +
                 "\n" +
@@ -78,12 +77,14 @@ public class HomeWorkController implements Initializable {
                 "\n" +
                 "Thank you .\n" +
                 "Sahan Rasanjana.").formatted();
+
         javafx.scene.input.Clipboard clipboard = javafx.scene.input.Clipboard.getSystemClipboard();
         javafx.scene.input.ClipboardContent content = new javafx.scene.input.ClipboardContent();
         content.putString(message);
         clipboard.setContent(content);
+
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
-        alert.setHeaderText("Not Attend Message Copied successfully");
+        alert.setHeaderText("Home Work Done Message Copied successfully");
         alert.show();
     }
 
@@ -102,7 +103,7 @@ public class HomeWorkController implements Initializable {
         Date todate1 = cal.getTime();
         String BeforeDate = dateFormat.format(todate1);
 
-        String message = ( name + "( "+ studenID +" ) - Grade " +grade+ "\n" +
+        String message = (name + "( " + studenID + " ) - Grade " + grade + "\n" +
                 "\n" +
                 "ආදරනීය දෙමාපියනි,\n" +
                 "\n" +
@@ -115,8 +116,9 @@ public class HomeWorkController implements Initializable {
         javafx.scene.input.ClipboardContent content = new javafx.scene.input.ClipboardContent();
         content.putString(message);
         clipboard.setContent(content);
+
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
-        alert.setHeaderText("Not Attend Message Copied successfully");
+        alert.setHeaderText("Home Work Wrong Message Copied successfully");
         alert.show();
     }
 
@@ -130,18 +132,7 @@ public class HomeWorkController implements Initializable {
 
         LocalDate Date = LocalDate.now();
 
-//        tblStudentDetails.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
-//            if (newValue != null) {
-//                // newValue contains the selected item. You can now access its properties or perform actions.
-//                String studentName = newValue.getStudentID(); // Assuming 'Student' has a method called getStudentName()
-//                System.out.println("Selected Student: " + studentName);
-//            } else {
-//                // Handle the case where no item is selected (newValue is null)
-//                System.out.println("No student selected");
-//            }
-//        });
-
-        String message = ( name + "( "+ studenID +" ) - Grade " +grade+ "\n" +
+        String message = (name + "( " + studenID + " ) - Grade " + grade + "\n" +
                 "\n" +
                 "ආදරනීය දෙමාපියනි,\n" +
                 "\n" +
@@ -153,6 +144,7 @@ public class HomeWorkController implements Initializable {
         javafx.scene.input.ClipboardContent content = new javafx.scene.input.ClipboardContent();
         content.putString(message);
         clipboard.setContent(content);
+
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
         alert.setHeaderText("Not Attend Message Copied successfully");
         alert.show();
@@ -185,12 +177,5 @@ public class HomeWorkController implements Initializable {
         tblStudentDetails.getColumns().get(3).setCellValueFactory(new PropertyValueFactory<>("whatsappNumber"));
         tblStudentDetails.getColumns().get(4).setCellValueFactory(new PropertyValueFactory<>("mobileNumber"));
         tblStudentDetails.getColumns().get(5).setCellValueFactory(new PropertyValueFactory<>("address"));
-
-//        tblStudentDetails.getSelectionModel().setCellSelectionEnabled(true);
-//        tblStudentDetails.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
-
-
-
-
     }
 }

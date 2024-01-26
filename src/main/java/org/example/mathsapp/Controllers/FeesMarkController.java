@@ -33,11 +33,6 @@ public class FeesMarkController implements Initializable {
     private TextField txtPrice;
 
     @FXML
-    void CopyButton(MouseEvent event) {
-
-    }
-
-    @FXML
     void KeySearch(ActionEvent event) {
         String studentId = txtSearchStudentID.getText();
 
@@ -81,8 +76,8 @@ public class FeesMarkController implements Initializable {
 
         String message = ( name + " (" + student_ID + ") - Grade " + grade + "\n" +
                 "\n" +
-                "ආදරනීය දෙමා පියනි,\n"+
-                Month + " මාසය සඳහා ඔබේ දරුවා ගේ පන්ති ගාස්තු ගෙවීම සාර්ථකයි.\n" +
+                "ආදරනීය දෙමාපියනි,\n"+
+                Month + " මාසය සඳහා ඔබේ දරුවාගේ පන්ති ගාස්තු ගෙවීම සාර්ථකයි.\n" +
                 "මාසික ගාස්තුව : රු. " +monthClassFee+ " \n" +
                 "ගෙවූ මුදල : රු. " +Price+"\n" +
                 "දිනය : " +DateAndTime+ "\n" +
@@ -97,7 +92,7 @@ public class FeesMarkController implements Initializable {
 
         if (b==true) {
             Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
-            alert.setHeaderText("Class Fee Done");
+            alert.setHeaderText("Class Fee Marked");
             alert.show();
             clear();
         }else {

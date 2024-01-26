@@ -105,12 +105,12 @@ public class DeleteStudentController {
 
         if (b==true) {
             Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
-            alert.setContentText("Student Update Successfully");
+            alert.setContentText("Student Delete Successfully");
             alert.show();
             clear();
         }else {
             Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setContentText("Student Update Fail");
+            alert.setContentText("Student Delete Fail");
             alert.show();
         }
     }
