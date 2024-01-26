@@ -36,32 +36,27 @@
             <TableColumn fx:id="colAddress" prefWidth="169.59991455078125" text="Address" />
         </columns>
       </TableView>
-      <TextField fx:id="txtStudentID" layoutX="83.0" layoutY="423.0" prefHeight="50.0" prefWidth="188.0" promptText="Student ID" style="-fx-background-radius: 20; -fx-background-color: D9D9D9; -fx-prompt-text-fill: black;">
-         <opaqueInsets>
-            <Insets />
-         </opaqueInsets>
-      </TextField>
-      <Text fill="WHITE" layoutX="311.0" layoutY="424.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Student Has Been Home Work ?" wrappingWidth="217.28887939453125">
+      <Text fill="WHITE" layoutX="28.0" layoutY="416.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Student Has Been Home Work ?" translateY="15.0" wrappingWidth="217.28887939453125">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Text>
-      <ImageView fitHeight="42.0" fitWidth="36.0" layoutX="532.0" layoutY="401.0" onMouseClicked="#HomeWorkDone" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="42.0" fitWidth="36.0" layoutX="249.0" layoutY="393.0" onMouseClicked="#HomeWorkDone" pickOnBounds="true" preserveRatio="true" translateY="15.0">
          <image>
             <Image url="@../assets/HomeWorkDoneIcon.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="582.0" layoutY="398.0" onMouseClicked="#HomeWorkWrong" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="299.0" layoutY="390.0" onMouseClicked="#HomeWorkWrong" pickOnBounds="true" preserveRatio="true" translateY="15.0">
          <image>
             <Image url="@../assets/HomeWorkWrongIcon.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="42.0" fitWidth="48.0" layoutX="566.0" layoutY="449.0" onMouseClicked="#NotAttendingClass" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="42.0" fitWidth="48.0" layoutX="283.0" layoutY="441.0" onMouseClicked="#NotAttendingClass" pickOnBounds="true" preserveRatio="true" translateY="15.0">
          <image>
             <Image url="@../assets/NotComingIcon.png" />
          </image>
       </ImageView>
-      <Text fill="WHITE" layoutX="311.0" layoutY="476.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If the student does not attend class ?">
+      <Text fill="WHITE" layoutX="28.0" layoutY="468.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If the student does not attend class ?" translateY="15.0">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>

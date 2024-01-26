@@ -1,6 +1,7 @@
 package org.example.mathsapp.Controllers;
 
 import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -53,11 +54,11 @@ public class HomeWorkController implements Initializable {
 
     @FXML
     void HomeWorkDone(MouseEvent event) {
-        String student_ID = txtStudentID.getText();
+        Integer index = tblStudentDetails.getSelectionModel().getSelectedIndex();
+        String studenID = colID.getCellData(index).toString();
+        String name = colName.getCellData(index).toString();
+        String grade = colGrade.getCellData(index).toString();
 
-        Student student = StudentModel.SearchStudent(student_ID);
-        String name = student.getName();
-        int grade = student.getGrade();
 
         DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         Date date = new Date();
@@ -67,7 +68,9 @@ public class HomeWorkController implements Initializable {
         Date todate1 = cal.getTime();
         String BeforeDate = dateFormat.format(todate1);
 
-        String message = ( name + "( "+ student_ID +" ) - Grade " +grade+ "\n" +
+
+
+        String message = ( name + "( "+ studenID +" ) - Grade " +grade+ "\n" +
                 "\n" +
                 "ආදරනීය දෙමාපියනි,\n" +
                 "\n" +
@@ -86,11 +89,10 @@ public class HomeWorkController implements Initializable {
 
     @FXML
     void HomeWorkWrong(MouseEvent event) {
-        String student_ID = txtStudentID.getText();
-
-        Student student = StudentModel.SearchStudent(student_ID);
-        String name = student.getName();
-        int grade = student.getGrade();
+        Integer index = tblStudentDetails.getSelectionModel().getSelectedIndex();
+        String studenID = colID.getCellData(index).toString();
+        String name = colName.getCellData(index).toString();
+        String grade = colGrade.getCellData(index).toString();
 
         DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         Date date = new Date();
@@ -100,7 +102,7 @@ public class HomeWorkController implements Initializable {
         Date todate1 = cal.getTime();
         String BeforeDate = dateFormat.format(todate1);
 
-        String message = ( name + "( "+ student_ID +" ) - Grade " +grade+ "\n" +
+        String message = ( name + "( "+ studenID +" ) - Grade " +grade+ "\n" +
                 "\n" +
                 "ආදරනීය දෙමාපියනි,\n" +
                 "\n" +
@@ -121,25 +123,29 @@ public class HomeWorkController implements Initializable {
 
     @FXML
     void NotAttendingClass(MouseEvent event) {
-        String student_ID = txtStudentID.getText();
+        Integer index = tblStudentDetails.getSelectionModel().getSelectedIndex();
+        String studenID = colID.getCellData(index).toString();
+        String name = colName.getCellData(index).toString();
+        String grade = colGrade.getCellData(index).toString();
 
-        Student student = StudentModel.SearchStudent(student_ID);
-        String name = student.getName();
-        int grade = student.getGrade();
+        LocalDate Date = LocalDate.now();
 
-        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-        Date date = new Date();
-        String todate = dateFormat.format(date);
-        Calendar cal = Calendar.getInstance();
-        cal.add(Calendar.DATE, -7);
-        Date todate1 = cal.getTime();
-        String BeforeDate = dateFormat.format(todate1);
+//        tblStudentDetails.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
+//            if (newValue != null) {
+//                // newValue contains the selected item. You can now access its properties or perform actions.
+//                String studentName = newValue.getStudentID(); // Assuming 'Student' has a method called getStudentName()
+//                System.out.println("Selected Student: " + studentName);
+//            } else {
+//                // Handle the case where no item is selected (newValue is null)
+//                System.out.println("No student selected");
+//            }
+//        });
 
-        String message = ( name + "( "+ student_ID +" ) - Grade " +grade+ "\n" +
+        String message = ( name + "( "+ studenID +" ) - Grade " +grade+ "\n" +
                 "\n" +
                 "ආදරනීය දෙමාපියනි,\n" +
                 "\n" +
-                BeforeDate + " දින ඔබේ දරුවා පන්තිට සහභාගි නොවීය...\n" +
+                Date + " දින ඔබේ දරුවා පන්තිට සහභාගි නොවීය...\n" +
                 "\n" +
                 "Thank you !\n" +
                 "Sahan Rasanjana.").formatted();
@@ -180,9 +186,11 @@ public class HomeWorkController implements Initializable {
         tblStudentDetails.getColumns().get(4).setCellValueFactory(new PropertyValueFactory<>("mobileNumber"));
         tblStudentDetails.getColumns().get(5).setCellValueFactory(new PropertyValueFactory<>("address"));
 
+//        tblStudentDetails.getSelectionModel().setCellSelectionEnabled(true);
+//        tblStudentDetails.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
 
-        tblStudentDetails.getSelectionModel().setCellSelectionEnabled(true);
-        tblStudentDetails.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
+
+
 
     }
 }
