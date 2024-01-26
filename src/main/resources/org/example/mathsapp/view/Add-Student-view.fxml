@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="505.0" prefWidth="682.0" style="-fx-background-color: #34495e;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.mathsapp.Controllers.Student.AddStudentController">
+   <children>
+      <TextField fx:id="txtName" layoutX="132.0" layoutY="18.0" prefHeight="49.0" prefWidth="412.0" promptText="Name" style="-fx-background-radius: 20; -fx-background-color: D9D9D9; -fx-prompt-text-fill: black;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <TextField fx:id="txtStudentID" layoutX="132.0" layoutY="78.0" prefHeight="49.0" prefWidth="412.0" promptText="Student ID" style="-fx-background-radius: 20; -fx-background-color: D9D9D9; -fx-prompt-text-fill: black;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <TextField fx:id="txtphoneNumber" layoutX="132.0" layoutY="198.0" prefHeight="49.0" prefWidth="412.0" promptText="Phone Number" style="-fx-background-radius: 20; -fx-background-color: D9D9D9; -fx-prompt-text-fill: black;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <TextField fx:id="txtGrade" layoutX="132.0" layoutY="318.0" prefHeight="49.0" prefWidth="412.0" promptText="Grade" style="-fx-background-radius: 20; -fx-background-color: D9D9D9; -fx-prompt-text-fill: black;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <TextField fx:id="txtAddress" layoutX="132.0" layoutY="378.0" prefHeight="49.0" prefWidth="412.0" promptText="Address" style="-fx-background-radius: 20; -fx-background-color: D9D9D9; -fx-prompt-text-fill: black;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <Button layoutX="315.0" layoutY="445.0" mnemonicParsing="false" onMouseClicked="#studentAdd" prefHeight="42.0" prefWidth="104.0" style="-fx-background-radius: 10; -fx-background-color: D9D9D9;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="32.0" fitWidth="39.0" layoutX="367.0" layoutY="449.0" onMouseClicked="#studentAdd" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/AddStudentIcon.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Text layoutX="325.0" layoutY="471.0" onMouseClicked="#studentAdd" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD" wrappingWidth="32.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Text>
+      <Button disable="true" layoutX="109.0" layoutY="445.0" mnemonicParsing="false" onMouseClicked="#StudentUpdate" prefHeight="42.0" prefWidth="104.0" style="-fx-background-radius: 10; -fx-background-color: #95a5a6;">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="32.0" fitWidth="39.0" layoutX="171.0" layoutY="448.0" onMouseClicked="#StudentUpdate" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/UpdateStudentIcon.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </ImageView>
+      <Text layoutX="118.0" layoutY="471.0" onMouseClicked="#StudentUpdate" strokeType="OUTSIDE" strokeWidth="0.0" text="Update" wrappingWidth="52.79998779296875">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Text>
+      <Button disable="true" layoutX="521.0" layoutY="442.0" mnemonicParsing="false" onMouseClicked="#studentDelete" prefHeight="42.0" prefWidth="104.0" style="-fx-background-radius: 10; -fx-background-color: #95a5a6;">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="32.0" fitWidth="39.0" layoutX="581.0" layoutY="447.0" onMouseClicked="#studentDelete" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/AddStudentIcon.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </ImageView>
+      <Text layoutX="536.0" layoutY="470.0" onMouseClicked="#studentDelete" strokeType="OUTSIDE" strokeWidth="0.0" text="Delete" wrappingWidth="52.79998779296875">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Text>
+      <TextField fx:id="txtWhatsappNumber" layoutX="135.0" layoutY="138.0" prefHeight="49.0" prefWidth="412.0" promptText="Whatsapp Number" style="-fx-background-radius: 20; -fx-background-color: D9D9D9; -fx-prompt-text-fill: black;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <TextField fx:id="txtEmail" layoutX="132.0" layoutY="258.0" prefHeight="49.0" prefWidth="412.0" promptText="Email" style="-fx-background-radius: 20; -fx-background-color: D9D9D9; -fx-prompt-text-fill: black;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <Pane fx:id="Pane" layoutX="28.0" layoutY="18.4" prefHeight="505.0" prefWidth="104.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="578.0" AnchorPane.topAnchor="0.0" />
+   </children>
+</AnchorPane>

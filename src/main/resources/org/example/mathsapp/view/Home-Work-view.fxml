@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="505.0" prefWidth="682.0" style="-fx-background-color: #34495e;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.mathsapp.Controllers.HomeWorkController">
+   <children>
+      <ImageView fitHeight="42.0" fitWidth="46.0" layoutX="558.0" layoutY="18.0" onMouseClicked="#SearchStudentsGrade" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/SearchIcon.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <TextField fx:id="txtStudentsGrade" layoutX="83.0" layoutY="14.0" onAction="#KeySearch" prefHeight="50.0" prefWidth="455.0" promptText="Enter Students Grade" style="-fx-background-radius: 20; -fx-background-color: D9D9D9; -fx-prompt-text-fill: black;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <TableView fx:id="tblStudentDetails" layoutX="8.0" layoutY="94.0" prefHeight="304.0" prefWidth="666.0" style="-fx-background-color: #34495e;">
+        <columns>
+          <TableColumn fx:id="colID" prefWidth="97.59997844696045" text="Student ID" />
+            <TableColumn fx:id="colName" prefWidth="126.4000244140625" text="Name" />
+            <TableColumn fx:id="colGrade" minWidth="7.20001220703125" prefWidth="39.19993591308594" text="Grade" />
+            <TableColumn fx:id="colWhatsappNumber" prefWidth="121.5999755859375" text="Whats App Number" />
+            <TableColumn fx:id="colMobileNumber" prefWidth="106.4000244140625" text="Mobile Number" />
+            <TableColumn fx:id="colAddress" prefWidth="169.59991455078125" text="Address" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtStudentID" layoutX="83.0" layoutY="423.0" prefHeight="50.0" prefWidth="188.0" promptText="Student ID" style="-fx-background-radius: 20; -fx-background-color: D9D9D9; -fx-prompt-text-fill: black;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <Text fill="WHITE" layoutX="311.0" layoutY="424.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Student Has Been Home Work ?" wrappingWidth="217.28887939453125">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="42.0" fitWidth="36.0" layoutX="532.0" layoutY="401.0" onMouseClicked="#HomeWorkDone" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/HomeWorkDoneIcon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="582.0" layoutY="398.0" onMouseClicked="#HomeWorkWrong" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/HomeWorkWrongIcon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="42.0" fitWidth="48.0" layoutX="566.0" layoutY="449.0" onMouseClicked="#NotAttendingClass" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/NotComingIcon.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="311.0" layoutY="476.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If the student does not attend class ?">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
