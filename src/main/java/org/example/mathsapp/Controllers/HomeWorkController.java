@@ -107,8 +107,8 @@ public class HomeWorkController implements Initializable {
                 "\n" +
                 "ආදරනීය දෙමාපියනි,\n" +
                 "\n" +
-                BeforeDate + " දිනට අදාළ  පැවරුම් ඔබේ දරුවා  නිසියාකාරව සිදුකර නැත...\n" +
-                "එම කරුණ සම්බන්ධයෙන් පැමිණ මා හමුවන්න.....\n" +
+                BeforeDate + " දිනට අදාළ පැවරුම් ඔබේ දරුවා නිසියාකාරව සිදුකර නැත...\n" +
+                "එම කරුණ සම්බන්ධයෙන් පැමිණ මා  හමුවන්න.....\n" +
                 "\n" +
                 "Thank you .\n" +
                 "Sahan Rasanjana.").formatted();

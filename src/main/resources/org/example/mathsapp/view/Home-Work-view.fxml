@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="505.0" prefWidth="682.0" style="-fx-background-color: #34495e;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.mathsapp.Controllers.HomeWorkController">
+<AnchorPane prefHeight="505.0" prefWidth="682.0" style="-fx-background-color: #34495e;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.mathsapp.Controllers.HomeWorkController">
    <children>
       <ImageView fitHeight="42.0" fitWidth="46.0" layoutX="558.0" layoutY="18.0" onMouseClicked="#SearchStudentsGrade" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -45,16 +45,25 @@
          <image>
             <Image url="@../assets/HomeWorkDoneIcon.png" />
          </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </ImageView>
       <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="299.0" layoutY="390.0" onMouseClicked="#HomeWorkWrong" pickOnBounds="true" preserveRatio="true" translateY="15.0">
          <image>
             <Image url="@../assets/HomeWorkWrongIcon.png" />
          </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </ImageView>
       <ImageView fitHeight="42.0" fitWidth="48.0" layoutX="283.0" layoutY="441.0" onMouseClicked="#NotAttendingClass" pickOnBounds="true" preserveRatio="true" translateY="15.0">
          <image>
             <Image url="@../assets/NotComingIcon.png" />
          </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </ImageView>
       <Text fill="WHITE" layoutX="28.0" layoutY="468.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If the student does not attend class ?" translateY="15.0">
          <font>
