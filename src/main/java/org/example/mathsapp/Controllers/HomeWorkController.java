@@ -50,7 +50,7 @@ public class HomeWorkController implements Initializable {
     private TableView<HomeWorkTM> tblStudentDetails;
 
     @FXML
-    private TextField txtStudentsGrade;
+    private TextField txtSearchGrade;
 
     @FXML
     void HomeWorkDone(MouseEvent event) {
@@ -152,7 +152,7 @@ public class HomeWorkController implements Initializable {
 
     @FXML
     void KeySearch(ActionEvent event) {
-        int grade = Integer.parseInt(txtStudentsGrade.getText());
+        int grade = Integer.parseInt(txtSearchGrade.getText());
 
         ArrayList<HomeWorkTM> list = HomeWorkModel.Search(grade);
 
@@ -161,7 +161,7 @@ public class HomeWorkController implements Initializable {
 
     @FXML
     void SearchStudentsGrade(MouseEvent event) {
-        int grade = Integer.parseInt(txtStudentsGrade.getText());
+        int grade = Integer.parseInt(txtSearchGrade.getText());
 
         ArrayList<HomeWorkTM> list = HomeWorkModel.Search(grade);
 

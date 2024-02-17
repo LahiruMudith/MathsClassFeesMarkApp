@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #bdc3c7;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.mathsapp.Controllers.LockMenuController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #bdc3c7;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/17" fx:controller="org.example.mathsapp.Controllers.LockMenuController">
    <children>
       <TextField layoutX="300.0" layoutY="155.0" prefHeight="43.0" prefWidth="282.0" style="-fx-background-color: #f1c40f; -fx-background-radius: 20;" />
       <Text layoutX="313.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Password" />

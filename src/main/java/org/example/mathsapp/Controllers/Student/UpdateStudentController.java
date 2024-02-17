@@ -56,7 +56,7 @@ public class UpdateStudentController {
     @FXML
     void StudentUpdate(MouseEvent event) {
         String name = txtName.getText();
-        String studentId = txtStudentID.getText();
+        String studentId = txtSearchStudentID.getText();
         int whatsappNumber = Integer.parseInt(txtWhatsappNumber.getText());
         int phoneNumber = Integer.parseInt(txtphoneNumber.getText());
         String email = txtEmail.getText();
@@ -117,7 +117,7 @@ public class UpdateStudentController {
     public void clear() {
         txtName.setText("");
         txtSearchStudentID.setText("");
-        txtStudentID.setText("");
+//        txtStudentID.setText("");
         txtWhatsappNumber.setText("");
         txtphoneNumber.setText("");
         txtEmail.setText("");
