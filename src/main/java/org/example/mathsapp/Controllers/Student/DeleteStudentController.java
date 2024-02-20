@@ -48,6 +48,7 @@ public class DeleteStudentController {
     @FXML
     void KeySearch(ActionEvent event) {
         String studentId = txtSearchStudentID.getText();
+        System.out.println(studentId);
 
         Student student = StudentModel.SearchStudent(studentId);
         System.out.println(student.getName());

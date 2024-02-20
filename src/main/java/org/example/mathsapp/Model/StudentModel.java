@@ -95,12 +95,13 @@ public class StudentModel {
         Connection connection = DBConnection.getDbConnection().getConnection();
 
         try {
-            PreparedStatement stm = connection.prepareStatement("DELETE FROM student WHERE Student_ID=?");
+            PreparedStatement stm = connection.prepareStatement("DELETE student , feesmark FROM feesmark JOIN student ON  student.Student_ID=feesmark.Student_ID WHERE feesmark.Student_ID = ?");
             stm.setObject(1, studentId);
 
             int results = stm.executeUpdate();
 
             if (results > 0) {
+                System.out.println("done");
                 return true;
             }else {
                 return false;
